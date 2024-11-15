@@ -1,0 +1,24 @@
+{
+	"name": "saccharum",
+	"version": "0.0.0",
+	"description": "Sweetness scale calculations and transformations library",
+	"main": "dist/index.js",
+	"scripts": {
+		"ci": "npm run build && npm run lint-check",
+		"build": "tsc",
+		"lint-check": "prettier --check .",
+		"lint": "prettier --write .",
+		"exports-check": "attw --pack . --ignore-rules=cjs-resolves-to-esm"
+	},
+	"author": "David Bambusek <bambusekd@gmail.com>",
+	"license": "ISC",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.3"
+	}
+}
